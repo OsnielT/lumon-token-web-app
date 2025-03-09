@@ -1,8 +1,8 @@
-## LUMON Coin Web App
+## LUMON Tokan Web App
 
 Overview
 
-LUMON Coin is a digital cryptocurrency designed to facilitate efficient, secure, and swift transactions on the blockchain. Inspired by the themes of corporate structure and decentralization, this project merges blockchain technology with cultural satire.
+LUMON Tokan is a digital cryptocurrency designed to facilitate efficient, secure, and swift transactions on the blockchain. Inspired by the themes of corporate structure and decentralization, this project merges blockchain technology with cultural satire.
 
 Features
 
