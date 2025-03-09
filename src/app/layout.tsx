@@ -51,6 +51,12 @@ export default function RootLayout({
           type="image/png"
           href="/LUMON-ICON.png"
         />
+        <link
+          rel="icon"
+          href="/LUMON-ICON.ico"
+          type="image/x-icon"
+          sizes="16x16"
+        />
       </Head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}

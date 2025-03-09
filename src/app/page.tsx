@@ -87,7 +87,7 @@ export default function Home() {
 
   return (
     <div className="font-mono">
-      <header className="sticky top-0 w-full bg-gray-950 p-4 px-12 flex items-center justify-between shadow-md">
+      <header className="sticky top-0 w-full bg-gray-950 p-4 px-12 gap-y-4 flex flex-col sm:flex-row items-center justify-between shadow-md">
         <svg
           width="150"
           height="28"
@@ -120,7 +120,7 @@ export default function Home() {
             <g>
               <path
                 fillRule="evenodd"
-                className="fill-white group-hover:fill-[#51ceff] transition-all duration-300"
+                className="fill-[#51ceff] animate-pulse group-hover:animate-none group-hover:fill-[#51ceff] transition-all duration-300"
                 d="m1213 588c-52.5 0-95-42.5-95-95 0-52.5 42.5-95 95-95 52.5 0 95 42.5 95 95 0 52.5-42.5 95-95 95z"
               />
               <path
@@ -133,28 +133,28 @@ export default function Home() {
         </svg>
         <nav>
           <ul className="flex space-x-6 text-white font-medium">
-            <li>
+            <li className="border-b-2 border-gray-950 hover:border-[#51ceff] hover:text-[#51ceff]">
               <Link
                 legacyBehavior
                 href="#about"
               >
-                <a className="hover:text-[#51ceff]">About</a>
+                <a>About</a>
               </Link>
             </li>
-            <li>
+            <li className="border-b-2 border-gray-950 hover:border-[#51ceff] hover:text-[#51ceff]">
               <Link
                 legacyBehavior
                 href="#faq"
               >
-                <a className="hover:text-[#51ceff]">FAQ</a>
+                <a>FAQ</a>
               </Link>
             </li>
-            <li>
+            <li className="border-b-2 border-gray-950 hover:border-[#51ceff] hover:text-[#51ceff]">
               <Link
                 legacyBehavior
                 href="#community"
               >
-                <a className="hover:text-[#51ceff]">Community</a>
+                <a>Community</a>
               </Link>
             </li>
           </ul>
@@ -187,7 +187,7 @@ export default function Home() {
             <a
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-6 inline-block animate-pulse bg-white hover:bg-gray-900 hover:border-[#51ceff] hover:text-[#51ceff] border-white border-2 text-black font-bold py-3 px-6 rounded-lg text-lg shadow-lg transition-all uppercase tracking-wide"
+              className="mt-6 inline-block hover:animate-none animate-pulse bg-white hover:bg-gray-900 hover:border-[#51ceff] hover:text-[#51ceff] border-white border-2 text-black font-bold py-3 px-6 rounded-lg text-lg shadow-lg transition-all uppercase tracking-wide"
             >
               Buy on PancakeSwap
             </a>
@@ -280,7 +280,7 @@ export default function Home() {
               legacyBehavior
               href="https://twitter.com/yourtwitter"
             >
-              <a className="bg-gray-800 hover:bg-green-500 text-white py-2 px-4 rounded-lg transition-all uppercase">
+              <a className="bg-gray-800 hover:bg-gray-900 border-2 border-gray-800 hover:text-[#51ceff] hover:border-[#51ceff] text-white py-2 px-4 rounded-lg transition-all uppercase">
                 Twitter
               </a>
             </Link>
@@ -288,7 +288,7 @@ export default function Home() {
               legacyBehavior
               href="https://t.me/yourtelegram"
             >
-              <a className="bg-gray-800 hover:bg-green-500 text-white py-2 px-4 rounded-lg transition-all uppercase">
+              <a className="bg-gray-800 hover:bg-gray-900 border-2 border-gray-800 hover:text-[#51ceff] hover:border-[#51ceff] text-white py-2 px-4 rounded-lg transition-all uppercase">
                 Telegram
               </a>
             </Link>
@@ -304,14 +304,14 @@ export default function Home() {
         <h2 className="text-3xl font-semibold text-[#51ceff]">
           Frequently Asked Questions
         </h2>
-        <div className="mt-4 text-gray-300 text-left max-w-3xl mx-auto">
+        <div className="mt-4 px-8 lg:px-0 text-gray-300 text-left max-w-3xl mx-auto">
           {faqs.map((faq, index) => (
             <div
               key={index}
               className="border-b border-gray-700 py-3"
             >
               <button
-                className="w-full text-left text-lg font-semibold text-[#51ceff] focus:outline-none"
+                className="cursor-pointer w-full text-left text-lg font-semibold text-[#51ceff] focus:outline-none"
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
               >
                 {faq.question}
