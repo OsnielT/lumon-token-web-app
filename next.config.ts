@@ -6,8 +6,6 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true, // Required for Next.js images in static mode
   },
-  basePath: '/lumon-token-web-app',
-  assetPrefix: '/lumon-token-web-app/',
 };
 
 export default nextConfig;
