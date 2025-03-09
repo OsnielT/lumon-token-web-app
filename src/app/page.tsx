@@ -184,7 +184,11 @@ export default function Home() {
             legacyBehavior
             href="https://pancakeswap.finance/swap?outputCurrency=0x4b85e6fdb44df059e1756f7588820a83b07030da"
           >
-            <a className="mt-6 inline-block animate-pulse bg-white hover:bg-gray-900 hover:border-[#51ceff] hover:text-[#51ceff] border-white border-2 text-black font-bold py-3 px-6 rounded-lg text-lg shadow-lg transition-all uppercase tracking-wide">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-6 inline-block animate-pulse bg-white hover:bg-gray-900 hover:border-[#51ceff] hover:text-[#51ceff] border-white border-2 text-black font-bold py-3 px-6 rounded-lg text-lg shadow-lg transition-all uppercase tracking-wide"
+            >
               Buy on PancakeSwap
             </a>
           </Link>
