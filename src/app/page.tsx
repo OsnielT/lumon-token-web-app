@@ -1,5 +1,4 @@
 'use client';
-import Head from 'next/head';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
@@ -88,21 +87,6 @@ export default function Home() {
 
   return (
     <div className="font-mono">
-      <Head>
-        <link
-          rel="preconnect"
-          href="https://fonts.googleapis.com"
-        />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="anonymous"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Michroma&display=swap"
-          rel="stylesheet"
-        />
-      </Head>
       <header className="sticky top-0 w-full bg-gray-950 p-4 px-12 flex items-center justify-between shadow-md">
         <svg
           width="150"
@@ -227,8 +211,8 @@ export default function Home() {
             and discipline are key to maximizing blockchain efficiency.
           </p>
           <p className="mt-2 text-gray-500 text-sm italic">
-            "Your data is refined. Your transactions are pure. Your future is
-            secure."
+            &ldquo;Your data is refined. Your transactions are pure. Your future
+            is secure.&rdquo;
           </p>
         </div>
 
@@ -245,7 +229,7 @@ export default function Home() {
             </li>
             <li className="mb-4">
               🏛 <b>Participate in Governance</b> <br></br>Have a say in the
-              policies that shape LUMON's future.
+              policies that shape LUMON&apos;s future.
             </li>
             <li className="mb-4">
               🎟 <b>Exclusive NFT Acquisitions</b> <br></br>Unlock access to
@@ -268,14 +252,14 @@ export default function Home() {
             Not Just a Coin, A Cultural Statement
           </h2>
           <p className="mt-4 text-gray-300">
-            Yes, LUMON Coin embraces blockchain efficiency, but let's not
+            Yes, LUMON Coin embraces blockchain efficiency, but let&apos;s not
             forget: **this is a meme coin**. Inspired by corporate absurdity and
-            decentralization's rebellious spirit, we reject monotony and embrace
-            the irrationality of financial markets.
+            decentralization&apos;s rebellious spirit, we reject monotony and
+            embrace the irrationality of financial markets.
           </p>
           <p className="mt-2 text-gray-500 text-sm italic">
-            "We are all in this together, yet completely alone. Buy
-            responsibly."
+            &ldquo;We are all in this together, yet completely alone. Buy
+            responsibly.&rdquo;
           </p>
         </div>
 
