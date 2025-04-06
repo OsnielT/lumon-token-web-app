@@ -173,15 +173,15 @@ export default function Home() {
             affiliated, associated, authorized, endorsed by, or in any way
             officially connected with Apple Inc., Fifth Season, Red Hour Films,
             or any producers, writers, or actors associated with the television
-            series "Severance." All trademarks referenced are the property of
-            their respective owners.
+            series &quot;Severance.&quot; All trademarks referenced are the
+            property of their respective owners.
           </p>
           <p className="text-gray-400 mt-2 text-xs">
             LUMON Token is a fictional, parody cryptocurrency created for
             entertainment purposes only. It has no intrinsic or monetary value,
             is not an investment vehicle, and is not intended for financial
             speculation. The project is a satirical commentary and homage to the
-            world depicted in the show "Severance."
+            world depicted in the show &quot;Severance.&quot;
           </p>
           <p className="text-gray-400 mt-2 text-xs">
             No purchase is necessary to view, enjoy, or interact with this

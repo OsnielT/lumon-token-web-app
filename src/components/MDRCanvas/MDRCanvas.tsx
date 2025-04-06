@@ -10,9 +10,9 @@ const SCALE_RADIUS = 3; // Defines how many numbers around the cursor will be af
 
 // Generate static random numbers
 const generateStaticNumbers = () => {
-  let grid = [];
+  const grid = [];
   for (let i = 0; i < NUM_ROWS; i++) {
-    let row = [];
+    const row = [];
     for (let j = 0; j < NUM_COLS; j++) {
       row.push(Math.floor(Math.random() * 10));
     }
