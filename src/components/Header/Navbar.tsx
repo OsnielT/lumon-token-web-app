@@ -1,8 +1,40 @@
 import Link from 'next/link';
+import { useState } from 'react';
 
 export default function Navbar() {
+  const [isOpen, setOpen] = useState(false);
+
   return (
-    <header className="sticky top-0 w-full bg-gray-950 p-4 px-12 gap-y-4 flex flex-col sm:flex-row items-center justify-between shadow-md">
+    <header className="sticky top-0 w-full bg-gray-950 p-4 px-12 flex flex-col sm:flex-row items-center justify-between shadow-md z-50">
+      {/* Hamburger menu button - only visible on small screens */}
+      <button
+        className="sm:hidden absolute right-4 top-4 text-white"
+        onClick={() => setOpen(!isOpen)}
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          {isOpen ? (
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M6 18L18 6M6 6l12 12"
+            />
+          ) : (
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          )}
+        </svg>
+      </button>
       <svg
         width="150"
         height="28"
@@ -47,7 +79,11 @@ export default function Navbar() {
         </g>
       </svg>
       <nav>
-        <ul className="flex space-x-6 text-white font-medium">
+        <ul
+          className={` overflow-hidden mt-0 duration-150 transition-all ease-in-out flex text-center sm:flex-row gap-y-5 flex-col sm:space-x-6 text-white font-medium ${
+            isOpen ? 'h-30 sm:h-auto mt-5' : 'h-0   sm:flex'
+          }`}
+        >
           <li className="border-b-2 border-gray-950 hover:border-[#51ceff] hover:text-[#51ceff]">
             <Link
               legacyBehavior
@@ -59,15 +95,15 @@ export default function Navbar() {
           <li className="border-b-2 border-gray-950 hover:border-[#51ceff] hover:text-[#51ceff]">
             <Link
               legacyBehavior
-              href="#faq"
+              href="#howItWorks"
             >
-              <a>FAQ</a>
+              <a>How It Works</a>
             </Link>
           </li>
           <li className="border-b-2 border-gray-950 hover:border-[#51ceff] hover:text-[#51ceff]">
             <Link
               legacyBehavior
-              href="#community"
+              href="#helpInnie"
             >
               <a>Help an Innie!</a>
             </Link>

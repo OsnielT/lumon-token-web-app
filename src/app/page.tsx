@@ -81,7 +81,10 @@ export default function Home() {
 
       <main className="flex-grow px-6 max-w-3xl space-y-12">
         <section>
-          <h2 className="text-3xl font-semibold text-[#51ceff]">
+          <h2
+            className="text-3xl font-semibold text-[#51ceff]"
+            id="howItWorks"
+          >
             How It Works
           </h2>
           <ul className="text-gray-300 list-disc list-inside space-y-4 mt-4">
@@ -120,7 +123,10 @@ export default function Home() {
             </a>
           </Link>
         </section>
-        <hr className="mt-20"></hr>
+        <hr
+          id="helpInnie"
+          className="mt-20"
+        ></hr>
         <section className="max-w-3xl mx-auto px-6 py-12 text-center">
           <h2 className="text-3xl font-semibold text-[#51ceff] mb-4">
             Meet the Innie
@@ -131,19 +137,20 @@ export default function Home() {
             from the vending machine.
           </p>
 
-          <section className="flex gap-5 mb-10">
+          <section className="flex flex-col sm:flex-row gap-5 mb-10">
             {innies.map((innie, idx) => (
               <div
                 key={`innie-${idx}`}
                 className="relative rounded-2xl overflow-hidden border-t shadow-sky-950 shadow-none hover:shadow-lg border-gray-300 top-0 hover:-top-1 transition-all ease-in-out duration-200"
               >
                 <Image
+                  className="w-full"
                   alt={`innie-headshot-${idx}`}
                   src={innie.image}
                   width={200}
                   height={200}
                 />
-                <span className="absolute bottom-0 backdrop-blur-xs w-full left-0">
+                <span className="absolute bottom-0 backdrop-blur-xs w-full left-0 sm:text-lg text-3xl bg-slate-900/20 py-4 sm:py-1">
                   {innie.name}
                 </span>
               </div>
