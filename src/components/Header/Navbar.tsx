@@ -81,7 +81,7 @@ export default function Navbar() {
       <nav>
         <ul
           className={` overflow-hidden mt-0 duration-150 transition-all ease-in-out flex text-center sm:flex-row gap-y-5 flex-col sm:space-x-6 text-white font-medium ${
-            isOpen ? 'h-30 sm:h-auto mt-5' : 'h-0   sm:flex'
+            isOpen ? 'h-30 sm:h-auto mt-5 sm:mt-0' : 'h-0  sm:h-auto sm:flex'
           }`}
         >
           <li className="border-b-2 border-gray-950 hover:border-[#51ceff] hover:text-[#51ceff]">
