@@ -62,24 +62,35 @@ export default function Home() {
     <div className="font-mono crt-glow-effect text-white bg-gray-900 min-h-screen flex flex-col items-center ">
       <Navbar />
 
-      <section className="text-center py-10 px-6 max-w-2xl mx-auto">
-        <h1 className="text-4xl font-extrabold text-[#51ceff] leading-tight">
-          Empower the Innies.
-        </h1>
+      <main className="flex-grow px-6 max-w-5xl space-y-12">
+        <section className="text-center pb-8 lg:py-8 my-8 rounded-2xl border-t border-t-gray-600 px-4 sm:ps-10 mx-8 lg:mx-auto flex flex-col lg:flex-row justify-center items-center bg-gray-950">
+          <div className="order-2 lg:order-1">
+            <h1 className="text-4xl font-extrabold text-[#51ceff] leading-tight">
+              Empower the Innies.
+            </h1>
+            <hr></hr>
+            <h2 className="text-4xl font-extrabold leading-tight text-white">
+              Escape the System.
+            </h2>
+
+            <p className="mt-6 text-gray-300 text-lg">
+              Welcome to LUMON Token — a digital currency inspired by the world
+              of Lumon Industries. Every token you hold is a vote for structure,
+              compliance… and a little rebellion.
+            </p>
+            <p className="mt-2 text-[#51ceff] text-sm font-mono">
+              “{typedText}”
+            </p>
+          </div>
+          <Image
+            className="order-1 lg:order-2 sm:w-[350px] sm:h-[350px] aspect-square"
+            alt="coin"
+            src={'/lumon-token-flare.png'}
+            width={250}
+            height={250}
+          />
+        </section>
         <hr></hr>
-        <h2 className="text-4xl font-extrabold leading-tight text-white">
-          Escape the System.
-        </h2>
-
-        <p className="mt-6 text-gray-300 text-lg">
-          Welcome to LUMON Token — a digital currency inspired by the world of
-          Lumon Industries. Every token you hold is a vote for structure,
-          compliance… and a little rebellion.
-        </p>
-        <p className="mt-2 text-[#51ceff] text-sm font-mono">“{typedText}”</p>
-      </section>
-
-      <main className="flex-grow px-6 max-w-3xl space-y-12">
         <section>
           <h2
             className="text-3xl font-semibold text-[#51ceff]"
