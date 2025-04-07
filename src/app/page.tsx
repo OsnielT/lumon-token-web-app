@@ -63,7 +63,7 @@ export default function Home() {
       <Navbar />
 
       <main className="flex-grow px-6 max-w-5xl space-y-12">
-        <section className="text-center pb-8 lg:py-8 my-8 rounded-2xl border-t border-t-gray-600 px-4 sm:ps-10 mx-8 lg:mx-auto flex flex-col lg:flex-row justify-center items-center bg-gray-950">
+        <section className="text-center pb-8 lg:py-8 my-8  mx-0 px-0 flex flex-col gap-10 lg:flex-row justify-center items-center">
           <div className="order-2 lg:order-1">
             <h1 className="text-4xl font-extrabold text-[#51ceff] leading-tight">
               Empower the Innies.
@@ -85,12 +85,12 @@ export default function Home() {
           <Image
             className="order-1 lg:order-2 sm:w-[350px] sm:h-[350px] aspect-square"
             alt="coin"
-            src={'/lumon-token-flare.png'}
+            src={'/lumon-token-flare-2.png'}
             width={250}
             height={250}
           />
         </section>
-        <hr></hr>
+
         <section>
           <h2
             className="text-3xl font-semibold text-[#51ceff]"
