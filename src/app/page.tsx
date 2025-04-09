@@ -82,12 +82,14 @@ export default function Home() {
               “{typedText}”
             </p>
           </div>
+{/* spinning coin */}
           <Image
-            className="order-1 lg:order-2 sm:w-[350px] sm:h-[350px] aspect-square"
+            className="order-1 lg:order-2 sm:w-[350px] sm:h-[350px] aspect-square select-none pointer-events-none"
             alt="coin"
-            src={'/lumon-token-flare-2.png'}
+            src={'/3dcoin.gif'}
             width={250}
             height={250}
+            draggable={false}
           />
         </section>
 

@@ -24,3 +24,19 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* ⛔ Disable selection & drag across all elements */
+* {
+  user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+/* Disable drag for specific media elements */
+img {
+  pointer-events: none;
+  -webkit-user-drag: none;
+  user-drag: none;
+}
