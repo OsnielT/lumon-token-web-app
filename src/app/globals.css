@@ -34,7 +34,7 @@ body {
   -ms-user-select: none;
 }
 
-/* Disable drag for specific media elements */
+/* Disable drag for specific media elements testing*/
 img {
   pointer-events: none;
   -webkit-user-drag: none;
