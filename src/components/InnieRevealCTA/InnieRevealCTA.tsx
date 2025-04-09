@@ -28,7 +28,7 @@ export default function InnieRevealCTA({ innies }: InnieRevealCTAProps) {
 
   return (
     <section className="bg-gray-950 text-white text-center py-16 px-6 border-t border-gray-600 rounded-lg ">
-      <h2 className="text-4xl font-bold text-[#51ceff] mb-6">
+      <h2 className="text-4xl font-bold text-[#4f707e] mb-6">
         Acquire LUMON Token
       </h2>
       <p className="text-gray-300 max-w-2xl mx-auto mb-6">
