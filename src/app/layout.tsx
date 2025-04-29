@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
-import Head from 'next/head';
 import './globals.css';
 
 const geistSans = Geist({
@@ -36,6 +35,9 @@ export const metadata: Metadata = {
     locale: 'en_US',
     type: 'website',
   },
+  icons: {
+    icon: '/redo-lumen-coin.png', // <-- THIS IS HOW YOU OFFICIALLY SET FAVICON
+  },
 };
 
 export default function RootLayout({
@@ -45,19 +47,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Head>
-        <link
-          rel="icon"
-          type="image/png"
-          href="/LUMON-ICON.png"
-        />
-        <link
-          rel="icon"
-          href="/LUMON-ICON.ico"
-          type="image/x-icon"
-          sizes="16x16"
-        />
-      </Head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

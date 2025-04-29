@@ -86,7 +86,7 @@ export default function Home() {
           <Image
             className="order-1 lg:order-2 sm:w-[350px] sm:h-[350px] aspect-square select-none pointer-events-none"
             alt="coin"
-            src={'/3dcoin.gif'}
+            src={'/3dgifmaker50484.gif'}
             width={250}
             height={250}
             draggable={false}
