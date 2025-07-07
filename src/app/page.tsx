@@ -1,13 +1,16 @@
-'use client';
-import Navbar from '@/components/Header/Navbar';
-import InnieRevealCTA from '@/components/InnieRevealCTA/InnieRevealCTA';
-import Image from 'next/image';
-import Link from 'next/link';
-import { useEffect, useState } from 'react';
+"use client";
+import Navbar from "@/components/Header/Navbar";
+import InnieRevealCTA from "@/components/InnieRevealCTA/InnieRevealCTA";
+import Image from "next/image";
+import Link from "next/link";
+import { useEffect, useState } from "react";
+import SpinningCoin from "@/components/spinningCoin";
+
+
 
 export default function Home() {
-  const [typedText, setTypedText] = useState('');
-  const fullText = 'In every token lies a refined number, a new possibility.';
+  const [typedText, setTypedText] = useState("");
+  const fullText = "In every token lies a refined number, a new possibility.";
 
   useEffect(() => {
     let index = 0;
@@ -39,68 +42,62 @@ export default function Home() {
 
   const innies = [
     {
-      name: 'James Wong.',
-      role: 'Macrodata Refiner',
-      perk: 'Snack from the vending machine',
-      image: '/headshots/james-wong.png',
+      name: "James Wong.",
+      role: "Macrodata Refiner",
+      perk: "Snack from the vending machine",
+      image: "/headshots/james-wong.png",
     },
     {
-      name: 'Michael Flemming.',
-      role: 'New Hire',
-      perk: 'Time in the wellness room',
-      image: '/headshots/michael-flemming.png',
+      name: "Michael Flemming.",
+      role: "New Hire",
+      perk: "Time in the wellness room",
+      image: "/headshots/michael-flemming.png",
     },
     {
-      name: 'Taylor Eagon.',
-      role: 'MDR',
-      perk: 'A curated music break',
-      image: '/headshots/taylor-eagan.png',
+      name: "Taylor Eagon.",
+      role: "MDR",
+      perk: "A curated music break",
+      image: "/headshots/taylor-eagan.png",
     },
   ];
 
   return (
-    <div className="font-mono crt-glow-effect text-white bg-gray-900 min-h-screen flex flex-col items-center ">
+    <div className='font-mono crt-glow-effect text-white bg-gray-900 min-h-screen flex flex-col items-center '>
       <Navbar />
 
-      <main className="flex-grow px-6 max-w-5xl space-y-12">
-        <section className="text-center pb-8 lg:py-8 my-8  mx-0 px-0 flex flex-col gap-10 lg:flex-row justify-center items-center">
-          <div className="order-2 lg:order-1">
-            <h1 className="text-4xl font-extrabold text-[#51ceff] leading-tight">
+      <main className='flex-grow px-6 max-w-5xl space-y-12'>
+        <section className='text-center pb-8 lg:py-8 my-8  mx-0 px-0 flex flex-col gap-10 lg:flex-row justify-center items-center'>
+          <div className='order-2 lg:order-1'>
+            <h1 className='text-4xl font-extrabold text-[#51ceff] leading-tight'>
               Empower the Innies.
             </h1>
             <hr></hr>
-            <h2 className="text-4xl font-extrabold leading-tight text-white">
+            <h2 className='text-4xl font-extrabold leading-tight text-white'>
               Escape the System.
             </h2>
 
-            <p className="mt-6 text-gray-300 text-lg">
+            <p className='mt-6 text-gray-300 text-lg'>
               Welcome to LUMON Token — a digital currency inspired by the world
               of Lumon Industries. Every token you hold is a vote for structure,
               compliance… and a little rebellion.
             </p>
-            <p className="mt-2 text-[#51ceff] text-sm font-mono">
+            <p className='mt-2 text-[#51ceff] text-sm font-mono'>
               “{typedText}”
             </p>
           </div>
-{/* spinning coin */}
-          <Image
-            className="order-1 lg:order-2 sm:w-[350px] sm:h-[350px] aspect-square select-none pointer-events-none"
-            alt="coin"
-            src={'/3dgifmaker50484.gif'}
-            width={250}
-            height={250}
-            draggable={false}
-          />
+
+          <div className='order-1 lg:order-2'>
+            <SpinningCoin />
+          </div>
         </section>
 
         <section>
           <h2
-            className="text-3xl font-semibold text-[#51ceff]"
-            id="howItWorks"
-          >
+            className='text-3xl font-semibold text-[#51ceff]'
+            id='howItWorks'>
             How It Works
           </h2>
-          <ul className="text-gray-300 list-disc list-inside space-y-4 mt-4">
+          <ul className='text-gray-300 list-disc list-inside space-y-4 mt-4'>
             <li>
               <strong>Get LUMON</strong>: Buy tokens on PancakeSwap.
             </li>
@@ -115,55 +112,51 @@ export default function Home() {
           </ul>
         </section>
 
-        <section className="text-center px-6 py-12 bg-gray-950 rounded-lg border-t border-gray-600">
-          <h2 className="text-3xl font-semibold text-[#51ceff] mb-2">
+        <section className='text-center px-6 py-12 bg-gray-950 rounded-lg border-t border-gray-600'>
+          <h2 className='text-3xl font-semibold text-[#51ceff] mb-2'>
             Acquire LUMON Token
           </h2>
-          <p className="text-gray-300 mb-4 max-w-xl mx-auto">
+          <p className='text-gray-300 mb-4 max-w-xl mx-auto'>
             Ready to empower an innie? Each token purchase brings light to the
             darkness of the Macrodata Refinement floor.
           </p>
           <Link
-            href="https://pancakeswap.finance/swap?outputCurrency=0x4b85e6fdb44df059e1756f7588820a83b07030da"
-            legacyBehavior
-          >
+            href='https://pancakeswap.finance/swap?outputCurrency=0x4b85e6fdb44df059e1756f7588820a83b07030da'
+            legacyBehavior>
             <a
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-white hover:bg-gray-900 text-black hover:text-[#51ceff] border-white border-2 font-bold py-3 px-6 rounded-lg text-lg shadow-lg transition-all uppercase tracking-wide"
-            >
+              target='_blank'
+              rel='noopener noreferrer'
+              className='inline-block bg-white hover:bg-gray-900 text-black hover:text-[#51ceff] border-white border-2 font-bold py-3 px-6 rounded-lg text-lg shadow-lg transition-all uppercase tracking-wide'>
               Buy on PancakeSwap
             </a>
           </Link>
         </section>
         <hr
-          id="helpInnie"
-          className="mt-20"
-        ></hr>
-        <section className="max-w-3xl mx-auto px-6 py-12 text-center">
-          <h2 className="text-3xl font-semibold text-[#51ceff] mb-4">
+          id='helpInnie'
+          className='mt-20'></hr>
+        <section className='max-w-3xl mx-auto px-6 py-12 text-center'>
+          <h2 className='text-3xl font-semibold text-[#51ceff] mb-4'>
             Meet the Innie
           </h2>
-          <p className="text-gray-300 mb-6">
+          <p className='text-gray-300 mb-6'>
             Each purchase randomly reveals a Lumon employee — your contribution
             grants them rare privileges: music, wellness breaks, or even a bite
             from the vending machine.
           </p>
 
-          <section className="flex flex-col sm:flex-row gap-5 mb-10">
+          <section className='flex flex-col sm:flex-row gap-5 mb-10'>
             {innies.map((innie, idx) => (
               <div
                 key={`innie-${idx}`}
-                className="relative rounded-2xl overflow-hidden border-t shadow-sky-950 shadow-none hover:shadow-lg border-gray-300 top-0 hover:-top-1 transition-all ease-in-out duration-200"
-              >
+                className='relative rounded-2xl overflow-hidden border-t shadow-sky-950 shadow-none hover:shadow-lg border-gray-300 top-0 hover:-top-1 transition-all ease-in-out duration-200'>
                 <Image
-                  className="w-full"
+                  className='w-full'
                   alt={`innie-headshot-${idx}`}
                   src={innie.image}
                   width={200}
                   height={200}
                 />
-                <span className="absolute bottom-0 backdrop-blur-xs w-full left-0 sm:text-lg text-3xl bg-slate-900/20 py-4 sm:py-1">
+                <span className='absolute bottom-0 backdrop-blur-xs w-full left-0 sm:text-lg text-3xl bg-slate-900/20 py-4 sm:py-1'>
                   {innie.name}
                 </span>
               </div>
@@ -173,11 +166,11 @@ export default function Home() {
           <InnieRevealCTA innies={innies} />
         </section>
 
-        <section className="pb-20">
-          <h2 className="text-3xl font-semibold text-[#51ceff]">
+        <section className='pb-20'>
+          <h2 className='text-3xl font-semibold text-[#51ceff]'>
             Join the Collective
           </h2>
-          <p className="text-gray-300 mt-2">
+          <p className='text-gray-300 mt-2'>
             Stay informed and connected with the latest developments in the
             LUMON Token universe. Follow us on our official channels and become
             an integral part of the community that blurs the lines between
@@ -186,9 +179,9 @@ export default function Home() {
         </section>
 
         <hr></hr>
-        <section className="pb-10">
-          <h2 className="text-3xl font-semibold text-[#51ceff]">Disclaimer</h2>
-          <p className="text-gray-400 mt-2 text-xs">
+        <section className='pb-10'>
+          <h2 className='text-3xl font-semibold text-[#51ceff]'>Disclaimer</h2>
+          <p className='text-gray-400 mt-2 text-xs'>
             This website is an unofficial fan-made project and is not
             affiliated, associated, authorized, endorsed by, or in any way
             officially connected with Apple Inc., Fifth Season, Red Hour Films,
@@ -196,14 +189,14 @@ export default function Home() {
             series &quot;Severance.&quot; All trademarks referenced are the
             property of their respective owners.
           </p>
-          <p className="text-gray-400 mt-2 text-xs">
+          <p className='text-gray-400 mt-2 text-xs'>
             LUMON Token is a fictional, parody cryptocurrency created for
             entertainment purposes only. It has no intrinsic or monetary value,
             is not an investment vehicle, and is not intended for financial
             speculation. The project is a satirical commentary and homage to the
             world depicted in the show &quot;Severance.&quot;
           </p>
-          <p className="text-gray-400 mt-2 text-xs">
+          <p className='text-gray-400 mt-2 text-xs'>
             No purchase is necessary to view, enjoy, or interact with this
             website or its content. Any participation in acquiring the token is
             entirely voluntary and symbolic. Users should not expect any returns
