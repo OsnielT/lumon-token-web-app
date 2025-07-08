@@ -2,14 +2,14 @@
 
 export default function SpinningCoin() {
   return (
-    <div className="w-auto h-auto flex justify-center items-center">
+    <div className='w-auto h-auto flex justify-center items-center'>
       <video
-        src="/SpinningCoin.webm"
+        src='/SpinningCoin.webm'
         autoPlay
         loop
         muted
         playsInline
-        className="w-full h-full"
+        className='w-full h-full'
         style={{ backgroundColor: "transparent" }}
       />
     </div>
